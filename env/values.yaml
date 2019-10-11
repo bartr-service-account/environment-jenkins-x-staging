@@ -14,9 +14,10 @@ expose:
   - --v
   - 4
   config:
-    domain: bartr.tech
+    domain: 35.189.99.130.nip.io
     exposer: Ingress
     http: "true"
+    tlsacme: "false"
 jenkins:
   Servers:
     Global:
