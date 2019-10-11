@@ -14,7 +14,7 @@ expose:
   - --v
   - 4
   config:
-    domain: 35.189.99.130.nip.io
+    domain: bartr.tech
     exposer: Ingress
     http: "true"
     tlsacme: "false"
