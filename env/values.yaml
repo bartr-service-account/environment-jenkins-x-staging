@@ -16,8 +16,10 @@ expose:
   config:
     domain: bartr.tech
     exposer: Ingress
-    http: "true"
-    tlsacme: "false"
+    http: "false"
+    tlsSecretName: tls-bartr-tech-s
+    tlsacme: "true"
+    urltemplate: '{{.Service}}-{{.Namespace}}.{{.Domain}}'
 jenkins:
   Servers:
     Global:
